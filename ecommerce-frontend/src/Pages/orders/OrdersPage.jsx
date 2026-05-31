@@ -1,5 +1,5 @@
 import './orders.css'
-import { Header } from '../../Components/Header';
+import { Header } from '../../components/Header';
 import axios from 'axios';
 import dayjs from 'dayjs';
 import { formatMoney } from '../../utils/money';
