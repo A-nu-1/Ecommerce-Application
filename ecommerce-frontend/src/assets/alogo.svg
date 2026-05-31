@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 248 40" >
+  <defs>
+    <!-- Tailwind Blue 500 to Pink 800 Gradient -->
+    <linearGradient id="codeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2a75f6" />
+      <stop offset="100%" stop-color="#9d174d" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Logo Text with Programming Brackets Structure -->
+  <g fill="url(#codeGradient)" font-family="Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace" font-weight="700">
+  
+    
+    <!-- Main String -->
+    <text x="0" y="30" font-size="32" letter-spacing="-1">@nupama.<tspan dy="-4" font-size="18">likesCoding()</tspan></text>
+    
+   
+  </g>
+</svg>

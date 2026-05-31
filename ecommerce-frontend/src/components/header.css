@@ -1,0 +1,230 @@
+.header {
+  background-color: rgb(94, 26, 82);
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 10;
+}
+
+.header .left-section {
+  width: 208px;
+}
+
+@media (max-width: 800px) {
+  .header .left-section {
+    width: unset;
+  }
+}
+
+.header .header-link {
+  display: inline-block;
+  padding: 6px 9.5px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.header .logo:hover {
+ 
+ transform: scale(1.15) skew(10deg);
+   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+   animation:slidebg 5s linear infinite;
+   transition:  all 1s ease-in-out;
+}
+
+.header .logo {
+  
+  height: 30px;
+  flex-shrink: 3;
+  margin-top: 1px;
+  background-color: rgb(252, 251, 251);
+  border-radius: 5px;
+  padding-inline: 3px;
+  padding-block: 1px;
+}
+
+.header .mobile-logo {
+  height: 36px;
+  flex-shrink: 3;
+  margin-top: 1px;
+  display: none;
+  background-color: rgb(242, 239, 241);
+  border-radius: 5px;
+  padding-inline: 3px;
+  padding-block: 0px;
+  
+}
+
+@media (max-width: 675px) {
+  .header .logo {
+    display: none;
+  }
+
+  .header .mobile-logo {
+    display: block;
+    height: 38px;
+    margin-top: 1px;
+  }
+}
+
+.header .middle-section {
+  flex: 1;
+  max-width: 850px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+}
+
+.header .search-bar {
+  flex: 1;
+  width: 0;
+  font-size: 16px;
+  height: 38px;
+  padding-left: 15px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+}
+.header .search-bar::before{
+  background-color: red;
+}
+.header .search-bar:hover{
+ 
+ letter-spacing: 3px;
+  transition: 1s ease-in-out;
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+   animation:slidebg 5s linear infinite;
+}
+
+.header .search-button {
+  background-color: rgb(176, 84, 164);
+  
+  border: none;
+  width: 45px;
+  height: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.header .arrow {
+  position: absolute;
+  line-height: 0;
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+    margin-top: 5px;
+    top: 10px;
+    right: 5px;
+}
+
+.header .arrow:hover{
+  transform: rotate(360deg) scale(1.1);
+  transition: 1s ease-in-out;
+}
+
+.header .search-icon {
+  height: 20px;
+  margin-left: 0px;
+  margin-top: 3px;
+  color: white;
+}
+
+.header .right-section {
+  width: 180px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: end;
+}
+
+.header .orders-link {
+  color: white;
+
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.header .orders-link :hover{
+ border-radius: 3px;
+ transform: scale(1.2);
+ transition: 1s ease-in-out;
+   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+   animation:slidebg 5s linear infinite;
+}
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+.header .orders-link.active {  
+  text-decoration: underline; 
+}
+
+.header .orders-text {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.header .cart-link {
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+   text-shadow: 0 0 5px #e930d0, 
+                0 0 10px #e930d0, 
+                0 0 20px #e930d0, 
+                0 0 40px #e930d0, 
+                0 0 80px #e930d0;
+    animation: glow 1.5s infinite alternate;
+}
+
+.header .cart-icon {
+  width: 38px;  
+}
+
+
+.header .cart-text {
+  margin-left: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    }
+    100% {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    }
+}
+
+.header .cart-quantity {
+  color: rgb(72, 8, 79);
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  top: 8.5px;
+  right: 46px;
+  width: 26px;
+  text-align: center;
+}

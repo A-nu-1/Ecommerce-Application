@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 140 24" width="140" height="24">
+  <defs>
+    <!-- Background color for empty stars -->
+    <linearGradient id="emptyStar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5e7eb00" />
+    </linearGradient>
+    
+    <!-- Foreground color for filled stars -->
+    <linearGradient id="filledStar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#901f81"/>
+    </linearGradient>
+
+    <!-- Master Star Shape Definition -->
+    <g id="star">
+      <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z"
+    stroke="#721b6b" stroke-width="2" stroke-linejoin="round" paint-order="stroke fill"/>
+    </g>
+
+    <!-- CONTROL FILL HERE: Change the offset attribute (0% to 100%) -->
+    <clipPath id="partial-fill-mask">
+      <rect x="0" y="0" width="68" height="24" />
+    </clipPath>
+  </defs>
+
+  <!-- Background Layer: 5 Empty Stars -->
+  <g fill="url(#emptyStar)">
+    <use href="#star" x="0"/>
+    <use href="#star" x="28"/>
+    <use href="#star" x="56"/>
+    <use href="#star" x="84"/>
+    <use href="#star" x="112"/>
+  </g>
+
+  <!-- Foreground Layer: Filled Stars -->
+  <g fill="url(#filledStar)">
+    <!-- Full Stars: Add or remove these based on rating -->
+    <use href="#star" x="0"/>
+    <use href="#star" x="28"/>
+    
+    <!-- Partial Star: Uses the mask defined above -->
+    <g clip-path="url(#partial-fill-mask)">
+      <!-- <use href="#star" x="56"/>-->
+    </g>
+  </g>
+</svg>

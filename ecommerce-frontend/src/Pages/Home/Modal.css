@@ -1,0 +1,105 @@
+.backdrop {
+    background-color: rgba(244, 199, 240, 0.894);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    inset: 0;
+}
+
+.modal {
+    width: 80vw;
+    height: 80vh;
+    background-color: transparent;
+    position: relative;
+}
+
+.carContainer {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.modal .carousel {
+    position: relative;
+    border-radius: 15px;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgb(52, 13, 54);
+    justify-content: center;
+}
+
+.modal .slide {
+    position: absolute;
+    border-radius: 5px;
+}
+
+.modal .slide-hidden {
+    display: none;
+}
+
+.modal .arro {
+    position: absolute;
+    background-color: rgb(247, 243, 243);
+    width: 3rem;
+    height: 3rem;
+    color: rgb(18, 18, 18);
+    border-radius: 100%;
+    border: solid 2px;
+    top: 50%;
+    padding-bottom: 3px;
+    ;
+}
+
+.modal .arrow:hover {
+    cursor: pointer;
+}
+
+.modal .arrow-left {
+    left: 0;
+}
+
+.modal .arrow-right {
+    right: 0;
+}
+
+.modal .carousel .indicators {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+    border-radius: 3px;
+    color: rgb(18, 18, 18);
+    padding: 1px;
+}
+
+.modal .indicator {
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    border-width: 0.5px;
+    outline: none;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.modal .indicator-inactive {
+    background-color: grey;
+}
+
+.btnCont {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.modBtn {
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    font-weight: 900;
+}
