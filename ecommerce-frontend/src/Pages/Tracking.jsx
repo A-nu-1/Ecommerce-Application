@@ -1,4 +1,4 @@
-import { Header } from '../Components/Header'
+import { Header } from '../components/Header'
 import { Link, useParams } from 'react-router';
 import './tracking.css'
 import { useEffect, useState } from 'react';

@@ -1,5 +1,5 @@
 import './HomePage.css';
-import { Header } from '../../Components/Header';
+import { Header } from '../../components/Header';
 //import { products } from '../../startingCode/data/products';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
